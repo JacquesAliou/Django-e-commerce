@@ -1,0 +1,10 @@
+*.pyc
+/venv/
+.env
+.idea/
+db.sqlite3
+settings.py
+
+uploaded_media/
+
+

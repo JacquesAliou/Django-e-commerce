@@ -1,0 +1,48 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <ul>
+      <li class="active">
+      <a class="navbar-brand" href="{% url 'home' %}"> DJANGO FINAL </a></li>
+      </ul>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Blablabla <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Je suis un lien</a></li>
+        </ul>
+      </li>
+        <li><a href="#">Les Pros en Django</a></li>
+       <li><a href="#">Nous Localiser</a></li>
+      <li><a href="#">Contact</a></li>
+
+         <li class="">
+      <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" size="80">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+      </form>
+         </li>
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+
+      <li class="dropdown">
+       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+         <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+            alt="avatar image" height="30"> {{user.username}} </a>
+      <ul class="dropdown-menu">
+      <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-off"></span>Logout </a></li>
+          <p>Nouveau Client ?<a href="{% url 'register' %}" > Créer un compte</a></p>
+
+      </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
